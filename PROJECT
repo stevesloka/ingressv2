@@ -1,0 +1,16 @@
+domain: stevesloka.com
+layout:
+- go.kubebuilder.io/v3
+projectName: ingressv2
+repo: github.com/stevesloka/ingressv2
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: stevesloka.com
+  group: networking
+  kind: Ingress
+  path: github.com/stevesloka/ingressv2/api/v2
+  version: v2
+version: "3"
